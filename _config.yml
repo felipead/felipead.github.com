@@ -1,0 +1,4 @@
+pygments: true
+permalink: /post/:title
+name: Felipe Dornelas, Technology Agnostic Software Engineer
+exclude: ['Gemfile','Gemfile.lock','Rakefile','.git','.gitignore','README.md']
