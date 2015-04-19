@@ -9,4 +9,4 @@ _site/
 *.sublime-workspace
 
 # Jetbrains WebStorm
-*.idea
+.idea/
