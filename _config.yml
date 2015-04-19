@@ -1,4 +1,3 @@
-pygments: true
 permalink: /post/:title
-name: Felipe Dornelas, Technology Agnostic Software Engineer
-exclude: ['Gemfile','Gemfile.lock','Rakefile','.git','.gitignore','README.md','LICENSE.txt']
+name: Felipe Dornelas
+exclude: ['Gemfile','Gemfile.lock','.git','.gitignore','README.md','LICENSE.txt']
