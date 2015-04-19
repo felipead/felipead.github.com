@@ -1,2 +1,12 @@
+# Jekyll
 _site/
+
+# Sass
 .sass-cache/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Jetbrains WebStorm
+*.idea
