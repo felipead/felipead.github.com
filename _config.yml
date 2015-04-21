@@ -1,3 +1,6 @@
-permalink: /post/:title
 name: Felipe Dornelas
+email: m@felipedornelas.com
+author: Felipe Dornelas
+url: http://felipedornelas.com
+
 exclude: ['Gemfile','Gemfile.lock','.git','.gitignore','README.md','LICENSE.txt']

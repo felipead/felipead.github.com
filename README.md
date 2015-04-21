@@ -8,5 +8,4 @@ Powered by:
  - [Sass](http://sass-lang.com), a CSS pre-processor.
  - [Bourbon](http://bourbon.io), a Sass Mixin library.
  - [Neat](http://neat.bourbon.ion), a responsive semantic grid framework for Sass and Bourbon.
- 
-Inspired by the [Exemplar](http://tybenz.com/exemplar/) theme but heavily customized.
+ - [Formspree](http://formspree.io) for sending e-mails through the contact form.
