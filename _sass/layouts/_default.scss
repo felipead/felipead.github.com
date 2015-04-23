@@ -1,6 +1,10 @@
 @import "partials/header";
 @import "partials/footer";
 
-body {
+.container {
     @include outer-container;
+}
+
+.page-divider {
+	border-bottom: 1px solid #ddd;
 }

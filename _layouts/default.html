@@ -10,16 +10,21 @@
     <link rel="stylesheet" href="/css/site.css" type="text/css">
 </head>
 
-<body>
-   {% include header.html %}
+<body>  
+    <div class="container">
+        {% include header.html %}
 
-    <section id="main">
-        <article class="container">
-            {{ content }}
-        </article>
-    </section>
+        <div class="page-divider"></div>
 
-    {% include footer.html %}
+        <section id="main">
+            <article class="container">
+                {{ content }}
+            </article>
+        </section>
+
+        <div class="page-divider"></div>
+
+        {% include footer.html %}
+    </div>
 </body>
-
 </html>
