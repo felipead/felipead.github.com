@@ -6,5 +6,8 @@
 }
 
 .page-divider {
+	@include span-columns(12);
 	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
