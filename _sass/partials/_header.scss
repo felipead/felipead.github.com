@@ -52,7 +52,7 @@ header {
 
       &:focus,
       &:hover {
-        color: transparentize($dark-gray, 0.2);
+        color: $dark-gray;
       }
     }
   }
