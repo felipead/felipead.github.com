@@ -1,35 +1,31 @@
 <header>
-    <div class="container">
-        <h5 class="logo"><a href="/">Felipe Dornelas</a></h5>
-        <nav class="main">
-            <ul>
-                {% if page.nav == "about" %}
-                    <li><a href="/" class="active">About</a></li>
-                {% else %}
-                    <li><a href="/">About</a></li>
-                {% endif %}
+    <div id="logo"><a href="/">Felipe Dornelas</a></div>
 
-                {% if page.nav == "cv" %}
-                    <li><a href="/cv" class="active">CV</a></li>
-                {% else %}
-                    <li><a href="/cv">CV</a></li>
-                {% endif %}
+    <nav>
+        <ul>
+            {% if page.nav == "about" %}
+                <li><a href="/" class="active">About</a></li>
+            {% else %}
+                <li><a href="/">About</a></li>
+            {% endif %}
 
-                {% if page.nav == "projects" %}
-                    <li><a href="/projects" class="active">Projects</a></li>
-                {% else %}
-                    <li><a href="/projects">Projects</a></li>
-                {% endif %}
+            {% if page.nav == "cv" %}
+                <li><a href="/cv" class="active">CV</a></li>
+            {% else %}
+                <li><a href="/cv">CV</a></li>
+            {% endif %}
 
-                {% if page.nav == "contact" %}
-                    <li><a href="/contact" class="active">Contact</a></li>
-                {% else %}
-                    <li><a href="/contact">Contact</a></li>
-                {% endif %}
-            </ul>
-        </nav>
-        <div class="nav-slider">
-            <div class="nav-selection {{ page.nav }}"></div>
-        </div>
-    </div>
+            {% if page.nav == "projects" %}
+                <li><a href="/projects" class="active">Projects</a></li>
+            {% else %}
+                <li><a href="/projects">Projects</a></li>
+            {% endif %}
+
+            {% if page.nav == "contact" %}
+                <li><a href="/contact" class="active">Contact</a></li>
+            {% else %}
+                <li><a href="/contact">Contact</a></li>
+            {% endif %}
+        </ul>
+    </nav>
 </header>

@@ -1,0 +1,6 @@
+@import "partials/header";
+@import "partials/footer";
+
+body {
+    @include outer-container;
+}

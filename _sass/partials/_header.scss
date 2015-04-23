@@ -1,0 +1,55 @@
+
+header {
+  @include span-columns(12);
+
+  #logo {
+    @include media($medium-screen) {
+      @include span-columns(4);
+      float: left;
+    }
+  }
+
+  nav {  
+    @include media($medium-screen) {
+      @include span-columns(8);
+      float: right;
+    }
+
+    ul {
+      line-height: 1.5em;
+      margin: 0 0 1em 0;
+      padding: 0;
+      
+      @include media($medium-screen) {
+        line-height: 1.8em;
+        margin-left: 1em;
+        margin-bottom: 0;
+      }
+    }
+
+    ul li {
+      list-style: none;
+      font-weight: 800;      
+      padding-right: 1em;
+
+      .active {
+        color: $dark-gray;
+      }
+
+      @include media($medium-screen) {
+        display: inline;
+        text-align: left;
+      }
+    }
+
+    ul li a {
+      color: $light-gray;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        color: transparentize($dark-gray, 0.2);
+      }
+    }
+  }
+}
