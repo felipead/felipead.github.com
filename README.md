@@ -22,4 +22,4 @@ Powered by:
 
 		$ jekyll serve --watch
 
-4. Open http://localhost:4000 on your browser
+4. Open `http://localhost:4000` on your browser
