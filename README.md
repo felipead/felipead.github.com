@@ -14,7 +14,7 @@ Powered by:
 
 1. Install Ruby with Bundler
 
-2. Install dependencies:
+2. Install dependencies from `Gemfile`:
 
 		$ bundler install
 
