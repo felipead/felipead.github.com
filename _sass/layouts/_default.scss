@@ -5,12 +5,11 @@
 
 .container {
     @include outer-container;
-    max-width: 960px;
 }
 
 .page-divider {
 	@include span-columns(12);
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px dotted #ddd;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }

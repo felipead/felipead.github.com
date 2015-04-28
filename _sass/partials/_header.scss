@@ -1,21 +1,30 @@
 
 header {
+
   @include span-columns(12);
 
   #logo {
-    text-transform: uppercase;
-
+    
     @include media($medium-screen) {
-      @include span-columns(4);
+      @include span-columns(5);
       float: left;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $dark-gray;
+      font-family: $logo-font-family;
+      font-size: 42px;
+      font-weight: 400;      
+      letter-spacing: 10px;
     }
   }
 
-  nav {
-    text-transform: uppercase;
-
+  #menu {
+    
     @include media($medium-screen) {
-      @include span-columns(8);
+      @include span-columns(7);
       float: right;
       text-align: right;
     }
@@ -34,7 +43,6 @@ header {
 
     ul li {
       list-style: none;
-      font-weight: 800;
       padding-right: 1em;
 
       @include media($medium-screen) {
@@ -43,13 +51,14 @@ header {
     }
 
     ul li a {
-      color: $medium-gray;
       text-decoration: none;
+      text-transform: uppercase;
+      font-family: $menu-font-family;  
+      color: $medium-gray;
+      font-size: 20px;
+      font-weight: 400;
 
-      &.active {
-        color: $dark-gray;
-      }
-
+      &.active,
       &:focus,
       &:hover {
         color: $dark-gray;
