@@ -1,6 +1,6 @@
 # felipedornelas.com
 
-Source code for my personal website and blog.
+Source code for my personal website.
 
 Powered by:
 
