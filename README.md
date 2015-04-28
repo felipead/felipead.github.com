@@ -12,7 +12,7 @@ Powered by:
 
 ## Setup
 
-1. Install Ruby with Bundler
+1. Install Ruby with [Bundler](http://bundler.io) (probably installed by default on OS X and Linux environments).
 
 2. Install dependencies from `Gemfile`:
 
