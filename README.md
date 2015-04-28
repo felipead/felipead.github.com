@@ -1,4 +1,4 @@
-# [felipedornelas.com](http://felipedornelas.com)
+# felipedornelas.com
 
 Source code for my personal website and blog.
 
