@@ -1,6 +1,6 @@
-# [felipedornelas.com](http://felipedornelas.com)
+# felipedornelas.com
 
-Source code for my personal website and blog.
+Source code for my personal website.
 
 Powered by:
 
@@ -12,9 +12,9 @@ Powered by:
 
 ## Setup
 
-1. Install Ruby with Bundler
+1. Install Ruby with [Bundler](http://bundler.io) (probably installed by default on OS X and Linux environments).
 
-2. Install dependencies:
+2. Install dependencies from `Gemfile`:
 
 		$ bundler install
 
