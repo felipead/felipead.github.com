@@ -1,74 +1,82 @@
 
+$header-height: 150px;
+
 header {
 
   @include span-columns(12);
+  @include media($medium-screen) {
+    @include row(table);
+  }
 
-  #logo {
-    
+  &, #logo, #menu, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+#logo {
+
+  @include media($medium-screen) {
+    @include span-columns(6 of 12);
+  }
+
+  a {
     @include media($medium-screen) {
-      @include span-columns(5);
-      float: left;
+      display: table-cell;
+      height: $header-height;
+      vertical-align: middle;
     }
 
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: $logo-font-family;
-      font-size: 42px;
-      font-weight: 400;      
-      letter-spacing: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $logo-font-family;
+    font-size: 42px;
+    font-weight: 400;      
+    letter-spacing: 10px;
+    color: $dark-gray;
 
-      color: $dark-gray;
+    &:focus,
+    &:hover {
+      color: lighten($dark-gray, 15%);
+    }
+  }
+}
 
-      &:focus,
-      &:hover {
-        color: lighten($dark-gray, 15%);
-      }
+#menu {
+
+  @include media($medium-screen) {
+    @include span-columns(6 of 12);
+  }
+
+  ul {
+    @include media($medium-screen) {
+      display: table-cell;
+      height: $header-height;
+      vertical-align: middle;
+    }
+  }
+  
+  ul li {
+    list-style: none;
+    @include media($medium-screen) {
+      display: inline;
+      padding-right: 1.5em;
     }
   }
 
-  #menu {
-    
-    @include media($medium-screen) {
-      @include span-columns(7);
-      float: right;
-      text-align: right;
-    }
+  ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $menu-font-family;  
+    color: $medium-gray;
+    font-size: 20px;
+    font-weight: 400;
 
-    ul {
-      line-height: 1.5em;
-      margin: 0 0 1em 0;
-      padding: 0;
-      
-      @include media($medium-screen) {
-        line-height: 1.8em;
-        margin-left: 1em;
-        margin-bottom: 0;
-      }
-    }
-
-    ul li {
-      list-style: none;
-      padding-right: 1em;
-
-      @include media($medium-screen) {
-        display: inline;
-      }
-    }
-
-    ul li a {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: $menu-font-family;  
-      color: $medium-gray;
-      font-size: 20px;
-      font-weight: 400;
-
-      &.active,
-      &:focus,
-      &:hover {
-        color: $dark-gray;
-      }
+    &.active,
+    &:focus,
+    &:hover {
+      color: $dark-gray;
     }
   }
 }

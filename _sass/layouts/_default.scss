@@ -5,6 +5,7 @@
 
 .container {
     @include outer-container;
+    position: relative;
 }
 
 .page-divider {
@@ -12,4 +13,13 @@
 	border-bottom: 1px dotted #ddd;
 	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+.header-divider {
+  @extend .page-divider;
+  margin-top: 0px;
+}
+
+.footer-divider {
+  @extend .page-divider;
 }
