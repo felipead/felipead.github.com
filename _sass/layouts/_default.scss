@@ -4,15 +4,15 @@
 @import "partials/footer";
 
 .container {
-    @include outer-container;
-    position: relative;
+  @include outer-container;
+  position: relative;
 }
 
 .page-divider {
-	@include span-columns(12);
-	border-bottom: 1px dotted #ddd;
-	margin-bottom: 20px;
-	margin-top: 20px;
+  @include span-columns(12);
+  border-bottom: 1px dotted #ddd;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .header-divider {
