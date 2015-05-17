@@ -23,9 +23,11 @@ header {
 
   a {
     @include media($medium-screen) {
-      display: table-cell;
       height: $header-height;
-      vertical-align: middle;
+
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(center);
     }
 
     text-decoration: none;
@@ -51,13 +53,11 @@ header {
 
   ul {
     @include media($medium-screen) {
-      display: table-cell;
       height: $header-height;
-      vertical-align: middle;
 
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(center);
     }
   }
   
