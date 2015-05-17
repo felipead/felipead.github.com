@@ -27,7 +27,7 @@ header {
 
       @include display(flex);
       @include align-items(center);
-      @include justify-content(center);
+      @include justify-content(flex-start);
     }
 
     text-decoration: none;
@@ -57,7 +57,7 @@ header {
 
       @include display(flex);
       @include align-items(center);
-      @include justify-content(center);
+      @include justify-content(flex-end);
     }
   }
   
