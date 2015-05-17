@@ -1,7 +1,7 @@
 
 header {
 
-    @include span-columns(12);
+    @include span-columns($grid-columns);
     @include media($medium-screen-up) {
         @include row(table);
     }
@@ -17,7 +17,7 @@ header {
 #logo {
 
     @include media($medium-screen-up) {
-        @include span-columns(6 of 12);
+        @include span-columns($grid-columns/2);
     }
 
     @include media($mobile-screen-down) {
@@ -54,7 +54,7 @@ header {
 #menu {
 
     @include media($medium-screen-up) {
-        @include span-columns(6 of 12);
+        @include span-columns($grid-columns/2);
     }
 
     ul {
@@ -99,7 +99,7 @@ header {
 
 .menu-divider {
     @include media($mobile-screen-down) {
-        border-bottom: $divider;
+        border-bottom: $divider-border;
         margin-top: $divider-vertical-margin;
         margin-bottom: $divider-vertical-margin;
     }
