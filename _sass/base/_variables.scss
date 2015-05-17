@@ -1,3 +1,6 @@
+// Layout
+$header-height: 150px;
+
 // Typography
 $base-font-family: "source-sans-pro", $helvetica;
 $heading-font-family: $base-font-family;
@@ -7,31 +10,44 @@ $menu-font-family: $logo-font-family;
 // Font Sizes
 $base-font-size: 1em;
 $heading-font-size: 1.2em;
+$logo-font-size: 42px;
+$logo-font-weight: 400;
+$menu-font-size: 20px;
+$menu-font-weight: 400;
 
-// Line height
+// Line Height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
+
+// Colors
+$white: #fcfcfc;
+$dark-gray: #222222;
+$medium-gray: #888888;
+$light-gray: #dddddd;
+
+// Font Colors
+$base-background-color: $white;
+$base-font-color: $dark-gray;
+$logo-font-color: $dark-gray;
+$inactive-menu-font-color: $medium-gray;
+$active-menu-font-color: $dark-gray;
+
+// Button Colors
+$action-color: $dark-gray;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Separator Line Border
+$separator-line: 1px dotted $base-border-color;
+$separator-line-vertical-margin: 20px;
 
 // Other Sizes
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
-
-// Colors
-$blue: #477dca;
-$dark-gray: #222222;
-$medium-gray: #888888;
-$light-gray: #ddd;
-
-// Font Colors
-$base-background-color: #fcfcfc;
-$base-font-color: $dark-gray;
-$action-color: $blue;
-
-// Border
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);

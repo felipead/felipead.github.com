@@ -4,28 +4,30 @@
 @import "partials/footer";
 
 body {
-  background-color: $base-background-color;
-  padding-left: 50px;
-  padding-right: 50px;
+    background-color: $base-background-color;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .container {
-  @include outer-container;
-  position: relative;
+    @include outer-container;
+    position: relative;
 }
 
 .page-divider {
-  @include span-columns(12);
-  border-bottom: 1px dotted $light-gray;
-  margin-bottom: 20px;
-  margin-top: 20px;
+    @include span-columns($grid-columns);
+    border-bottom: $separator-line;
+    margin-bottom: $separator-line-vertical-margin;
+    margin-top: $separator-line-vertical-margin;
 }
 
 .header-divider {
-  @extend .page-divider;
-  margin-top: 0px;
+    @extend .page-divider;
+    @include media($medium-screen-up) {
+        margin-top: 0px;
+    }
 }
 
 .footer-divider {
-  @extend .page-divider;
+    @extend .page-divider;
 }
