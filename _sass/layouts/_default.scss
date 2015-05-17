@@ -16,9 +16,9 @@ body {
 
 .page-divider {
     @include span-columns($grid-columns);
-    border-bottom: $separator-line;
-    margin-bottom: $separator-line-vertical-margin;
-    margin-top: $separator-line-vertical-margin;
+    border-bottom: $divider;
+    margin-bottom: $divider-vertical-margin;
+    margin-top: $divider-vertical-margin;
 }
 
 .header-divider {

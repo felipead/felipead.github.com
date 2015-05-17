@@ -99,9 +99,9 @@ header {
 
 .menu-divider {
     @include media($mobile-screen-down) {
-        border-bottom: $separator-line;
-        margin-top: $separator-line-vertical-margin;
-        margin-bottom: $separator-line-vertical-margin;
+        border-bottom: $divider;
+        margin-top: $divider-vertical-margin;
+        margin-bottom: $divider-vertical-margin;
     }
     @include media($medium-screen-up) {
         display: none;
