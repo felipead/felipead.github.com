@@ -69,44 +69,44 @@ header {
             @include align-items(center);
             @include justify-content(flex-end);
         }
+    }
 
-        li {
-            list-style: none;
+    li {
+        list-style: none;
 
-            @include media($mobile-screen-down) {
-                @include display(flex);
-                @include justify-content(center);
+        @include media($mobile-screen-down) {
+            @include display(flex);
+            @include justify-content(center);
+        }
+
+        @include media($medium-screen-up) {
+            display: inline;
+            padding-right: 1.8em;
+            &:last-child {
+                padding-right: 0;
             }
+        }
+    }
 
-            @include media($medium-screen-up) {
-                display: inline;
-                padding-right: 1.8em;
-                &:last-child {
-                    padding-right: 0;
-                }
-            }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $menu-font-family;    
+        font-weight: $menu-font-weight;
 
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-                font-family: $menu-font-family;    
-                font-weight: $menu-font-weight;
+        @include media($mobile-screen-down) {
+            font-size: $menu-font-size * 1.2;
+        }
+        @include media($medium-screen-up) {
+            font-size: $menu-font-size;
+        }
 
-                @include media($mobile-screen-down) {
-                    font-size: $menu-font-size * 1.2;
-                }
-                @include media($medium-screen-up) {
-                    font-size: $menu-font-size;
-                }
-
-                color: $inactive-menu-font-color;
-                
-                &.active,
-                &:focus,
-                &:hover {
-                    color: $active-menu-font-color;
-                }
-            }
+        color: $inactive-menu-font-color;
+        
+        &.active,
+        &:focus,
+        &:hover {
+            color: $active-menu-font-color;
         }
     }
 }
