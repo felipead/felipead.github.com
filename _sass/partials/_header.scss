@@ -1,4 +1,6 @@
 
+$half-grid-columns: $grid-columns/2;
+
 header {
 
     @include span-columns($grid-columns);
@@ -14,7 +16,7 @@ header {
         @include span-columns($half-grid-columns);
         margin: 0;
     }
-    @include media($mobile-screen-down) {
+    @include media($small-screen-down) {
         @include span-columns($grid-columns);
         margin-top: $divider-vertical-margin;
         margin-bottom: 0;
@@ -24,7 +26,7 @@ header {
         @include display(flex);
         @include align-items(center);
 
-        @include media($mobile-screen-down) {
+        @include media($small-screen-down) {
             @include justify-content(center);
         }
         @include media($medium-screen-up) {
@@ -37,14 +39,13 @@ header {
         font-family: $logo-font-family;
         font-size: $logo-font-size;
         font-weight: $logo-font-weight;
-        color: $logo-font-color;
-        @include media($mobile-screen-down) {
-            letter-spacing: 0.1em;
-        }
-        @include media($medium-screen-up) {
-            letter-spacing: 0.2em;
+
+        letter-spacing: $logo-letter-spacing;
+        @include media($large-screen-up) {
+            letter-spacing: $logo-letter-spacing * 1.5;
         }
 
+        color: $logo-font-color;
         &:focus,
         &:hover {
             color: lighten($logo-font-color, 15%);
@@ -57,7 +58,7 @@ header {
     @include media($medium-screen-up) {
         @include span-columns($half-grid-columns);
     }
-    @include media($mobile-screen-down) {
+    @include media($small-screen-down) {
         @include span-columns($grid-columns);
     }
 
@@ -74,16 +75,19 @@ header {
     li {
         list-style: none;
 
-        @include media($mobile-screen-down) {
+        @include media($small-screen-down) {
             @include display(flex);
             @include justify-content(center);
         }
 
         @include media($medium-screen-up) {
             display: inline;
-            padding-right: 1.8em;
+            padding-right: em(15);
             &:last-child {
                 padding-right: 0;
+            }
+            @include media($large-screen-up) {
+                padding-right: em(30);
             }
         }
     }
@@ -94,11 +98,9 @@ header {
         font-family: $menu-font-family;    
         font-weight: $menu-font-weight;
 
-        @include media($mobile-screen-down) {
+        font-size: $menu-font-size;
+        @include media($small-screen-down) {
             font-size: $menu-font-size * 1.2;
-        }
-        @include media($medium-screen-up) {
-            font-size: $menu-font-size;
         }
 
         color: $inactive-menu-font-color;
@@ -113,7 +115,7 @@ header {
 
 .menu-divider {
 
-    @include media($mobile-screen-down) {
+    @include media($small-screen-down) {
         @include span-columns($grid-columns);
         border-bottom: $divider-border;
         margin-top: $divider-vertical-margin;
