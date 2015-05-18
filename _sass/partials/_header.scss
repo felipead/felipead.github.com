@@ -1,6 +1,4 @@
 
-$half-grid-columns: $grid-columns/2;
-
 header {
 
     @include span-columns($grid-columns);

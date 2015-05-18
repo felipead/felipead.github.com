@@ -1,4 +1,50 @@
 
 footer {
+
     @include span-columns($grid-columns);
+    @include media($medium-screen-up) {
+        @include row(table);
+    }
+    margin: 0;
+}
+
+#disclaimer {
+
+    @include display(flex);
+    @include align-items(center);
+
+    @include media($medium-screen-up) {
+        @include span-columns($half-grid-columns);
+        @include justify-content(flex-start);
+    }
+    @include media($small-screen-down) {
+        @include span-columns($grid-columns);
+        @include justify-content(center);
+    }
+}
+
+
+$social-links: github soundcloud linkedin twitter tumblr instagram;
+$social-icon-size: 48px 48px;
+
+#social-links {
+    @include display(flex);
+    @include align-items(center);
+
+    @include media($small-screen-down) {
+        @include span-columns($grid-columns);
+        @include justify-content(center);
+    }
+    @include media($medium-screen-up) {
+        @include span-columns($half-grid-columns);
+        @include justify-content(flex-end);
+    }
+
+    @each $social-link in $social-links {
+        .#{$social-link}-link {
+            @include size($social-icon-size);
+            @include display(inline-block);
+            @include retina-image(/icons/social/#{$social-link}, $social-icon-size);
+        }
+    }
 }

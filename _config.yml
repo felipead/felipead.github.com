@@ -3,4 +3,11 @@ email: m@felipedornelas.com
 author: Felipe Dornelas
 url: http://felipedornelas.com
 
+soundcloud_url: http://soundcloud.com/felipead
+github_url: http://github.com/felipead
+twitter_url: http://twitter.com/felipead
+tumblr_url: http://felipead.tumblr.com
+instagram_url: http://instagram.com/felipedornelas
+linkedin_url: http://linkedin.com/in/felipead
+
 exclude: ['Gemfile','Gemfile.lock','.git','.gitignore','README.md','LICENSE.txt']
