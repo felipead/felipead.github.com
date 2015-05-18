@@ -9,6 +9,7 @@ Powered by:
  - [Bourbon](http://bourbon.io), a Sass Mixin library.
  - [Neat](http://neat.bourbon.ion), a responsive semantic grid framework for Sass and Bourbon.
  - [Formspree](http://formspree.io) for sending e-mails through the contact form.
+ - [Socicon](http://www.socicon.com/) to generate social network icons.
 
 ## Setup
 
