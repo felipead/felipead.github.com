@@ -23,10 +23,6 @@ footer {
     }
 }
 
-
-$social-links: github soundcloud linkedin twitter tumblr instagram;
-$social-icon-size: 48px 48px;
-
 #social-links {
     @include display(flex);
     @include align-items(center);
@@ -40,11 +36,11 @@ $social-icon-size: 48px 48px;
         @include justify-content(flex-end);
     }
 
-    @each $social-link in $social-links {
-        .#{$social-link}-link {
-            @include size($social-icon-size);
+    @each $social-network in $social-networks {
+        .#{$social-network}-link {
+            @include size($social-link-icon-size);
             @include display(inline-block);
-            @include retina-image(/icons/social/#{$social-link}, $social-icon-size);
+            @include retina-image(/icons/social/#{$social-network}, $social-link-icon-size);
         }
     }
 }
