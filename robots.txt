@@ -1,1 +1,2 @@
+Sitemap: http://felipedornelas.com/sitemap.xml
 User-agent: *
