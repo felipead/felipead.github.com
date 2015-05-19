@@ -11,7 +11,7 @@ footer {
     margin: 0;
 }
 
-#disclaimer {
+#footer-text {
 
     @include display(flex);
     @include align-items(center);
@@ -26,9 +26,13 @@ footer {
         @include justify-content(center);
         text-align: center;
     }
+
+    font-family: $monospace;
+    font-weight: bold;
 }
 
 #social-links {
+
     @include display(flex);
     @include align-items(center);
 
