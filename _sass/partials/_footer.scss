@@ -16,10 +16,12 @@ footer {
     @include media($medium-screen-up) {
         @include span-columns($half-grid-columns);
         @include justify-content(flex-start);
+        text-align: left;
     }
     @include media($small-screen-down) {
         @include span-columns($grid-columns);
         @include justify-content(center);
+        text-align: center;
     }
 }
 
@@ -30,10 +32,12 @@ footer {
     @include media($small-screen-down) {
         @include span-columns($grid-columns);
         @include justify-content(center);
+        text-align: center;
     }
     @include media($medium-screen-up) {
         @include span-columns($half-grid-columns);
         @include justify-content(flex-end);
+        text-align: right;
     }
 
     @each $social-network in $social-networks {
