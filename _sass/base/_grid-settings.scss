@@ -6,7 +6,6 @@ $gutter: 30px;
 $max-width: em(1080);
 
 $grid-columns: 12;
-$half-grid-columns: $grid-columns/2 of $grid-columns;
 
 // Neat Breakpoints
 $small-screen-down: new-breakpoint(max-width em(639));

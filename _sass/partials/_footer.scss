@@ -1,4 +1,7 @@
 
+$one-third-grid-columns: ($grid-columns/3) of $grid-columns;
+$two-thirds-grid-columns: (2*$grid-columns/3) of $grid-columns;
+
 footer {
 
     @include span-columns($grid-columns);
@@ -14,7 +17,7 @@ footer {
     @include align-items(center);
 
     @include media($medium-screen-up) {
-        @include span-columns($half-grid-columns);
+        @include span-columns($one-third-grid-columns);
         @include justify-content(flex-start);
         text-align: left;
     }
@@ -35,7 +38,7 @@ footer {
         text-align: center;
     }
     @include media($medium-screen-up) {
-        @include span-columns($half-grid-columns);
+        @include span-columns($two-thirds-grid-columns);
         @include justify-content(flex-end);
         text-align: right;
     }
