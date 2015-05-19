@@ -19,6 +19,7 @@ header {
         @include span-columns($grid-columns);
         margin-top: $divider-vertical-margin;
         margin-bottom: 0;
+        text-align: center;
     }
 
     a {
