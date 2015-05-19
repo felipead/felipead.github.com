@@ -12,7 +12,8 @@ header {
 
     @include media($medium-screen-up) {
         @include span-columns($half-grid-columns);
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     @include media($small-screen-down) {
         @include span-columns($grid-columns);
