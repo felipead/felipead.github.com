@@ -115,7 +115,7 @@ header {
     }
 }
 
-.menu-divider {
+#header-divider {
 
     @include media($small-screen-down) {
         @include span-columns($grid-columns);

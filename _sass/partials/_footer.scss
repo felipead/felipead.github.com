@@ -55,3 +55,16 @@ footer {
         }
     }
 }
+
+#footer-divider {
+
+    @include media($small-screen-down) {
+        @include span-columns($grid-columns);
+        border-bottom: $divider-border;
+        margin-top: $divider-vertical-margin;
+        margin-bottom: $divider-vertical-margin;
+    }
+    @include media($medium-screen-up) {
+        display: none;
+    }
+}
