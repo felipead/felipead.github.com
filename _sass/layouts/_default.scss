@@ -13,6 +13,16 @@ body {
     @include outer-container;
 }
 
+.block {
+    display: block;
+    @include media($medium-screen-up) {
+        @include span-columns(6);
+    }
+    @include media($small-screen-down) {
+        @include span-columns(12);
+    }
+}
+
 .page-divider {
     @include span-columns($grid-columns);
     border-bottom: $divider-border;
