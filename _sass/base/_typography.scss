@@ -17,10 +17,13 @@ h6 {
     font-size: $heading-font-size;
     line-height: $heading-line-height;
     margin: 0 0 $small-spacing;
+    text-transform: uppercase;
 }
 
 p {
     margin: 0 0 $small-spacing;
+    text-align: justify;
+    @include hyphens(auto);
 }
 
 a {
