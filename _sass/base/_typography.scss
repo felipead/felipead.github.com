@@ -28,6 +28,10 @@ p {
     @include hyphens(auto);
 }
 
+pre {
+    font-family: $monospace-family;
+}
+
 a {
     color: $action-color;
     text-decoration: none;
