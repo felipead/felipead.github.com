@@ -10,4 +10,6 @@ tumblr_url: http://felipead.tumblr.com
 instagram_url: http://instagram.com/felipedornelas
 linkedin_url: http://linkedin.com/in/felipead
 
+typekit_url: //use.typekit.net/hiq1egm.js
+
 exclude: ['Gemfile','Gemfile.lock','.git','.gitignore','README.md','LICENSE.txt']

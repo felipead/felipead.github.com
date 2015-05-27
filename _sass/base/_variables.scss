@@ -3,19 +3,22 @@
 $header-height: 150px;
 
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
-$logo-font-family: "Oswald", $base-font-family;
+$base-font-family: "source-sans-pro", $helvetica;
+$heading-font-family: "Oswald", $helvetica;
+$logo-font-family: "Oswald", $helvetica;
 $menu-font-family: $logo-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
-$heading-font-size: 1.2em;
+$heading-font-size: 1.1em;
+$heading-font-weight: 400;
+$heading-letter-spacing: 0.15em;
 $logo-font-size: 2.2em;
 $logo-font-weight: 400;
-$logo-letter-spacing: 0.1em;
-$menu-font-size: 1.3em;
+$logo-letter-spacing: 0.125em;
+$menu-font-size: 1.35em;
 $menu-font-weight: 400;
+$menu-letter-spacing: 0.08em;
 
 // Line Height
 $base-line-height: 1.5;
