@@ -98,6 +98,7 @@ header {
         text-transform: uppercase;
         font-family: $menu-font-family;    
         font-weight: $menu-font-weight;
+        letter-spacing: $menu-letter-spacing;
 
         font-size: $menu-font-size;
         @include media($small-screen-down) {
@@ -110,6 +111,7 @@ header {
         &:focus,
         &:hover {
             color: $active-menu-font-color;
+            border-bottom: 2px solid $dark-gray;
         }
     }
 }
