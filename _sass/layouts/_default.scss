@@ -3,6 +3,8 @@
 @import "partials/header";
 @import "partials/footer";
 
+$half-grid-columns: $grid-columns/2 of $grid-columns;
+
 body {
     background-color: $base-background-color;
     padding-left: 50px;
@@ -16,10 +18,10 @@ body {
 .block {
     display: block;
     @include media($medium-screen-up) {
-        @include span-columns(6);
+        @include span-columns($half-grid-columns);
     }
     @include media($small-screen-down) {
-        @include span-columns(12);
+        @include span-columns($grid-columns);
     }
 }
 

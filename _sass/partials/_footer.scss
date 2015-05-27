@@ -8,7 +8,6 @@ footer {
     @include media($medium-screen-up) {
         @include row(table);
     }
-    margin: 0;
 }
 
 #footer-text {
