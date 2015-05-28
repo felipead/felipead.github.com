@@ -18,12 +18,13 @@ h6 {
     font-weight: $heading-font-weight;
     letter-spacing: $heading-letter-spacing;
     line-height: $heading-line-height;
-    margin: 0 0 $small-spacing;
+    margin-top: $base-spacing;
+    margin-bottom: $small-spacing;
     text-transform: uppercase;
 }
 
 p {
-    margin: 0 0 $small-spacing;
+    margin-bottom: $small-spacing;
     text-align: justify;
     @include hyphens(auto);
 }
