@@ -39,6 +39,8 @@ footer {
         @include span-columns($grid-columns);
         @include justify-content(center);
         text-align: center;
+        margin-left: 0;
+        margin-right: 0;
     }
     @include media($medium-screen-up) {
         @include span-columns($two-thirds-grid-columns);
