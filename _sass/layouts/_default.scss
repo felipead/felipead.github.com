@@ -3,12 +3,18 @@
 @import "partials/header";
 @import "partials/footer";
 
-$half-grid-columns: $grid-columns/2 of $grid-columns;
+$half-grid-columns: $grid-columns/2;
 
 body {
     background-color: $base-background-color;
-    padding-left: 50px;
-    padding-right: 50px;
+    @include media($medium-screen-up) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include media($small-screen-down) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .container {
