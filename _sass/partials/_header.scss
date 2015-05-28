@@ -111,6 +111,9 @@ header {
         &:focus,
         &:hover {
             color: $active-menu-font-color;
+        }
+
+        &.active {
             border-bottom: 2px solid $dark-gray;
         }
     }
