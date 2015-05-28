@@ -114,7 +114,7 @@ header {
         }
 
         &.active {
-            border-bottom: 2px solid $dark-gray;
+            border-bottom: 2px solid $active-menu-font-color;
         }
     }
 }
