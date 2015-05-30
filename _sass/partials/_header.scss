@@ -96,15 +96,10 @@ header {
     a {
         text-decoration: none;
         text-transform: uppercase;
+        font-size: $menu-font-size;
         font-family: $menu-font-family;    
         font-weight: $menu-font-weight;
         letter-spacing: $menu-letter-spacing;
-
-        font-size: $menu-font-size;
-        @include media($small-screen-down) {
-            font-size: $menu-font-size * 1.2;
-        }
-
         color: $inactive-menu-font-color;
         
         &.active,
