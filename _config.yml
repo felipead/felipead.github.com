@@ -9,6 +9,4 @@ twitter_url: http://twitter.com/felipead
 instagram_url: http://instagram.com/felipedornelas
 linkedin_url: http://linkedin.com/in/felipead
 
-typekit_id: hiq1egm
-
 exclude: ['Gemfile','Gemfile.lock','.git','.gitignore','README.md','LICENSE.txt']
