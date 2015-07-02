@@ -50,6 +50,7 @@ header {
         &:focus,
         &:hover {
             color: lighten($logo-font-color, 15%);
+            border: none;
         }
     }
 }
@@ -106,6 +107,10 @@ header {
         &:focus,
         &:hover {
             color: $active-menu-font-color;
+        }
+
+        &:hover {
+            border-bottom: 2px solid $active-menu-font-color;
         }
     }
 }

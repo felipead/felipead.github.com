@@ -4,6 +4,7 @@ body {
     color: $base-font-color;
     font-family: $base-font-family;
     font-size: $base-font-size;
+    font-weight: $base-font-weight;
     line-height: $base-line-height;
 }
 
@@ -37,7 +38,7 @@ a {
     color: $action-color;
     text-decoration: none;
     transition: color 0.1s linear;
-    font-weight: 700;
+    font-weight: 400;
 
     &:active,
     &:focus,
@@ -49,6 +50,19 @@ a {
     &:focus {
         outline: none;
     }
+}
+
+p a {
+    border-bottom: 1px solid $action-color;
+}
+
+i, em {
+    font-weight: 300;
+    font-style: oblique;
+}
+
+b, strong {
+    font-weight: 400;
 }
 
 hr {
