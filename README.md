@@ -10,7 +10,7 @@ Powered by:
  - [Neat](http://neat.bourbon.ion), a responsive semantic grid framework for Sass and Bourbon.
  - [Formspree](http://formspree.io) for sending e-mails through the contact form.
 
-Fonts being used:
+Fonts being used (available at [Google Fonts](https://www.google.com/fonts)):
 
  - Oswald
  - Source Sans Pro
