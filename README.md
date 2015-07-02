@@ -7,7 +7,7 @@ Powered by:
  - [Jekyll](http://jekyllrb.com), the engine behind GitHub Pages.
  - [Sass](http://sass-lang.com), a CSS pre-processor.
  - [Bourbon](http://bourbon.io), a Sass Mixin library.
- - [Neat](http://neat.bourbon.ion), a responsive semantic grid framework for Sass and Bourbon.
+ - [Neat](http://neat.bourbon.io), a responsive semantic grid framework for Sass and Bourbon.
  - [Formspree](http://formspree.io) for sending e-mails through the contact form.
 
 Fonts being used (available at [Google Fonts](https://www.google.com/fonts)):
