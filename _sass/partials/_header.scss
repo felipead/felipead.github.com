@@ -107,10 +107,6 @@ header {
         &:hover {
             color: $active-menu-font-color;
         }
-
-        &.active {
-            border-bottom: 2px solid $active-menu-font-color;
-        }
     }
 }
 
