@@ -10,3 +10,6 @@ _site/
 
 # Jetbrains WebStorm
 .idea/
+
+# System
+.DS_Store
