@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="/css/site.css" type="text/css">
 </head>
 
-<body>  
+<body>
     <div class="container">
         {% include header.html %}
-
         <hr class="header-divider">
+    </div>
 
-        <section>
-            <article>
-                {{ content }}
-            </article>
-        </section>
+    <div class="container">
+    {{ content }}
+    </div>
 
+    <div class="container">
         <hr class="footer-divider">
-
         {% include footer.html %}
     </div>
 </body>

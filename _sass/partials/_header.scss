@@ -1,12 +1,7 @@
 
-$half-grid-columns: $grid-columns/2;
-
 header {
-
-    @include span-columns($grid-columns);
-    @include media($medium-screen-up) {
-        @include row(table);
-    }
+    @include fill-parent();
+    @include row(table);
     margin: 0;
 }
 
@@ -18,7 +13,6 @@ header {
         margin-bottom: 0;
     }
     @include media($small-screen-down) {
-        @include span-columns($grid-columns);
         margin-top: $divider-vertical-margin;
         margin-bottom: 0;
         text-align: center;
@@ -59,9 +53,6 @@ header {
 
     @include media($medium-screen-up) {
         @include span-columns($half-grid-columns);
-    }
-    @include media($small-screen-down) {
-        @include span-columns($grid-columns);
     }
 
     ul {
@@ -114,7 +105,6 @@ header {
 #header-divider {
 
     @include media($small-screen-down) {
-        @include span-columns($grid-columns);
         border-bottom: $divider-border;
         margin-top: $divider-vertical-margin;
         margin-bottom: $divider-vertical-margin;

@@ -3,7 +3,6 @@
 @import "partials/header";
 @import "partials/footer";
 
-$half-grid-columns: $grid-columns/2;
 
 body {
     background-color: $base-background-color;
@@ -27,12 +26,12 @@ body {
         @include span-columns($half-grid-columns);
     }
     @include media($small-screen-down) {
-        @include span-columns($grid-columns);
+        @include fill-parent();
     }
 }
 
 .page-divider {
-    @include span-columns($grid-columns);
+    @include fill-parent();
     border-bottom: $divider-border;
     margin-bottom: $divider-vertical-margin;
     margin-top: $divider-vertical-margin;
