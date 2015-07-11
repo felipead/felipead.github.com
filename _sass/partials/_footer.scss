@@ -39,8 +39,10 @@ footer {
     @each $social-network in $social-networks {
         .#{$social-network}-link {
             @include size($social-link-icon-size);
-            @include display(inline-block);
+            @include display(inline-flex);
             @include retina-image(/icons/social/#{$social-network}, $social-link-icon-size);
+            margin-left: 1px;
+            margin-right: 1px;
         }
     }
 }
