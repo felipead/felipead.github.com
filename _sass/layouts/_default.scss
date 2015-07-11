@@ -6,13 +6,12 @@
 
 body {
     background-color: $base-background-color;
+    padding-left: 5px;
+    padding-right: 5px;
+
     @include media($medium-screen-up) {
         padding-left: 30px;
         padding-right: 30px;
-    }
-    @include media($small-screen-down) {
-        padding-left: 5px;
-        padding-right: 5px;
     }
 }
 
@@ -22,11 +21,10 @@ body {
 
 .block {
     display: block;
+    @include fill-parent();
+
     @include media($medium-screen-up) {
         @include span-columns($half-grid-columns);
-    }
-    @include media($small-screen-down) {
-        @include fill-parent();
     }
 }
 

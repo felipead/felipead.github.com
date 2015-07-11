@@ -8,15 +8,13 @@ footer {
 
     @include display(flex);
     @include align-items(center);
+    @include justify-content(center);
+    text-align: center;
 
     @include media($medium-screen-up) {
         @include span-columns($one-third-grid-columns);
         @include justify-content(flex-start);
         text-align: left;
-    }
-    @include media($small-screen-down) {
-        @include justify-content(center);
-        text-align: center;
     }
 
     font-family: $monospace-font-family;
@@ -29,10 +27,9 @@ footer {
     @include display(flex);
     @include align-items(center);
 
-    @include media($small-screen-down) {
-        @include justify-content(center);
-        text-align: center;
-    }
+    @include justify-content(center);
+    text-align: center;
+
     @include media($medium-screen-up) {
         @include span-columns(2 * $one-third-grid-columns);
         @include justify-content(flex-end);
@@ -49,11 +46,10 @@ footer {
 }
 
 #footer-divider {
-    @include media($small-screen-down) {
-        border-bottom: $divider-border;
-        margin-top: $divider-vertical-margin;
-        margin-bottom: $divider-vertical-margin;
-    }
+    border-bottom: $divider-border;
+    margin-top: $divider-vertical-margin;
+    margin-bottom: $divider-vertical-margin;
+    
     @include media($medium-screen-up) {
         display: none;
     }
