@@ -10,6 +10,8 @@ Powered by:
  - [Neat](http://neat.bourbon.io), a responsive semantic grid framework for Sass and Bourbon.
  - [Formspree](http://formspree.io) for sending e-mails through the contact form.
 
+Unfortunately, Jekyll messes the indentation and adds a lot of blank lines to the produced HTML/CSS content. I couldn't find a solution for this issue that is compatible with GitHub Pages.
+
 Fonts being used (available at [Google Fonts](https://www.google.com/fonts)):
 
  - Oswald
