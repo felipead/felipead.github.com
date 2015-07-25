@@ -23,9 +23,18 @@ body {
     display: block;
     @include fill-parent();
 
+    margin-top: 4 * $block-vertical-margin;
+    margin-bottom: $block-vertical-margin;
+
     @include media($medium-screen-up) {
         @include span-columns($half-grid-columns);
+        margin-top: $block-vertical-margin;
     }
+}
+
+.first-block {
+    @extend .block;
+    margin-top: $block-vertical-margin;
 }
 
 .page-divider {
