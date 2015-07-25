@@ -9,9 +9,9 @@ input,
 label,
 select {
     display: block;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
+    font-family: $form-font-family;
+    font-size: $form-font-size;
+    font-weight: $form-font-weight;
 }
 
 label {
@@ -35,9 +35,9 @@ textarea {
     border-radius: $base-border-radius;
     box-shadow: $form-box-shadow;
     box-sizing: border-box;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
+    font-family: $form-font-family;
+    font-size: $form-font-size;
+    font-weight: $form-font-weight;
     margin-bottom: $base-spacing / 2;
     padding: $base-spacing / 3;
     transition: border-color;
