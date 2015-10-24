@@ -28,12 +28,6 @@ p {
     margin-bottom: $small-spacing;
     text-align: justify;
     @include hyphens(auto);
-
-    a:active,
-    a:focus,
-    a:hover {
-        border-bottom: 1px solid $action-color;
-    }
 }
 
 pre {

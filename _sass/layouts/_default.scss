@@ -40,6 +40,12 @@ body {
 
         margin-top: $block-vertical-margin;
     }
+
+    a:active,
+    a:focus,
+    a:hover {
+        border-bottom: 1px solid $action-color;
+    }
 }
 
 .page-divider {
