@@ -28,6 +28,12 @@ body {
 
     @include media($medium-screen-up) {
         @include span-columns($half-grid-columns);
+
+        padding-right: 20px;
+        &:last-child {
+            padding-right: 0px;
+        }
+
         margin-top: $block-vertical-margin;
     }
 }
