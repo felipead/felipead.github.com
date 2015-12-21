@@ -52,6 +52,15 @@ a {
     }
 }
 
+a.important {
+    &::before {
+        content: "→";
+        font-family: "Arial";
+        padding-right: 3px;
+        color: $action-color;
+    }
+}
+
 i, em {
     font-weight: 300;
     font-style: oblique;
@@ -59,6 +68,11 @@ i, em {
 
 b, strong {
     font-weight: 400;
+}
+
+.buzzword {
+    @extend em;
+    @include hyphens(none);
 }
 
 hr {
