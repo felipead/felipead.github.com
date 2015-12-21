@@ -52,15 +52,6 @@ a {
     }
 }
 
-a.important {
-    &::before {
-        content: "→";
-        font-family: "Arial";
-        padding-right: 3px;
-        color: $action-color;
-    }
-}
-
 i, em {
     font-weight: 300;
     font-style: oblique;
