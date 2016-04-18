@@ -1,21 +1,21 @@
 <header>
-    <h1 id="logo"><a href="/">Felipe Dornelas</a></h1>
+  <h1 id="logo"><a href="/">Felipe Dornelas</a></h1>
 
-    <hr id="header-divider">
+  <hr id="header-divider">
 
-    <nav id="menu">
-        <ul>
-            {% if page.nav == "about" %}
-                <li><a href="/" class="active">About</a></li>
-            {% else %}
-                <li><a href="/">About</a></li>
-            {% endif %}
+  <nav id="menu">
+    <ul>
+      {% if page.nav == "about" %}
+        <li><a href="/" class="active">About</a></li>
+      {% else %}
+        <li><a href="/">About</a></li>
+      {% endif %}
 
-            {% if page.nav == "contact" %}
-                <li><a href="/contact" class="active">Contact</a></li>
-            {% else %}
-                <li><a href="/contact">Contact</a></li>
-            {% endif %}
-        </ul>
-    </nav>
+      {% if page.nav == "contact" %}
+        <li><a href="/contact" class="active">Contact</a></li>
+      {% else %}
+        <li><a href="/contact">Contact</a></li>
+      {% endif %}
+    </ul>
+  </nav>
 </header>
