@@ -32,6 +32,6 @@ Icons being used:
 
 3. Start jekyll:
 
-    $ bundle exec jekyll serve --watch
+    $ bundle exec jekyll serve
 
 4. Open `http://localhost:4000` on your browser
