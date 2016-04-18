@@ -6,34 +6,34 @@
 
 
 body {
-    background-color: $base-background-color;
-    padding-left: 5px;
-    padding-right: 5px;
+  background-color: $base-background-color;
+  padding-left: 5px;
+  padding-right: 5px;
 
-    @include media($medium-screen-up) {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+  @include media($medium-screen-up) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .container {
-    @include outer-container;
+  @include outer-container;
 }
 
 .page-divider {
-    @include fill-parent();
-    border-bottom: $divider-border;
-    margin-bottom: $divider-vertical-margin;
-    margin-top: $divider-vertical-margin;
+  @include fill-parent();
+  border-bottom: $divider-border;
+  margin-bottom: $divider-vertical-margin;
+  margin-top: $divider-vertical-margin;
 }
 
 .header-divider {
-    @extend .page-divider;
-    @include media($medium-screen-up) {
-        margin-top: 0;
-    }
+  @extend .page-divider;
+  @include media($medium-screen-up) {
+    margin-top: 0;
+  }
 }
 
 .footer-divider {
-    @extend .page-divider;
+  @extend .page-divider;
 }

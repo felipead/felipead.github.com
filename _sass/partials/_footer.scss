@@ -1,58 +1,58 @@
 
 footer {
-    @include fill-parent();
-    @include row(table);
+  @include fill-parent();
+  @include row(table);
 }
 
 #footer-text {
 
-    @include display(flex);
-    @include align-items(center);
-    @include justify-content(center);
-    text-align: center;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  text-align: center;
 
-    @include media($medium-screen-up) {
-        @include span-columns($one-third-grid-columns);
-        @include justify-content(flex-start);
-        text-align: left;
-    }
+  @include media($medium-screen-up) {
+    @include span-columns($one-third-grid-columns);
+    @include justify-content(flex-start);
+    text-align: left;
+  }
 
-    font-family: $monospace-font-family;
-    a {
-        font-weight: 600;
-    }
+  font-family: $monospace-font-family;
+  a {
+    font-weight: 600;
+  }
 }
 
 #social-links {
-    @include display(flex);
-    @include align-items(center);
+  @include display(flex);
+  @include align-items(center);
 
-    @include justify-content(center);
-    text-align: center;
+  @include justify-content(center);
+  text-align: center;
 
-    @include media($medium-screen-up) {
-        @include span-columns(2 * $one-third-grid-columns);
-        @include justify-content(flex-end);
-        text-align: right;
+  @include media($medium-screen-up) {
+    @include span-columns(2 * $one-third-grid-columns);
+    @include justify-content(flex-end);
+    text-align: right;
+  }
+
+  @each $social-network in $social-networks {
+    .#{$social-network}-link {
+      @include size($social-link-icon-size);
+      @include display(inline-flex);
+      @include retina-image(/icons/social/#{$social-network}, $social-link-icon-size);
+      margin-left: 1px;
+      margin-right: 1px;
     }
-
-    @each $social-network in $social-networks {
-        .#{$social-network}-link {
-            @include size($social-link-icon-size);
-            @include display(inline-flex);
-            @include retina-image(/icons/social/#{$social-network}, $social-link-icon-size);
-            margin-left: 1px;
-            margin-right: 1px;
-        }
-    }
+  }
 }
 
 #footer-divider {
-    border-bottom: $divider-border;
-    margin-top: $divider-vertical-margin;
-    margin-bottom: $divider-vertical-margin;
-    
-    @include media($medium-screen-up) {
-        display: none;
-    }
+  border-bottom: $divider-border;
+  margin-top: $divider-vertical-margin;
+  margin-bottom: $divider-vertical-margin;
+
+  @include media($medium-screen-up) {
+    display: none;
+  }
 }

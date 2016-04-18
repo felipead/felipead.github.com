@@ -1,108 +1,108 @@
 
 header {
-    @include fill-parent();
-    @include row(table);
-    margin: 0;
+  @include fill-parent();
+  @include row(table);
+  margin: 0;
 }
 
 #logo {
 
-    margin-top: $divider-vertical-margin;
+  margin-top: $divider-vertical-margin;
+  margin-bottom: 0;
+  text-align: center;
+
+  @include media($medium-screen-up) {
+    @include span-columns($half-grid-columns);
+    margin-top: 0;
     margin-bottom: 0;
-    text-align: center;
+  }
+
+  a {
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
 
     @include media($medium-screen-up) {
-        @include span-columns($half-grid-columns);
-        margin-top: 0;
-        margin-bottom: 0;
+      height: $header-height;
+      @include justify-content(flex-start);
     }
 
-    a {
-        @include display(flex);
-        @include align-items(center);
-        @include justify-content(center);
+    text-decoration: none;
+    font-family: $logo-font-family;
+    font-size: $logo-font-size;
+    font-weight: $logo-font-weight;
 
-        @include media($medium-screen-up) {
-            height: $header-height;
-            @include justify-content(flex-start);
-        }
-
-        text-decoration: none;
-        font-family: $logo-font-family;
-        font-size: $logo-font-size;
-        font-weight: $logo-font-weight;
-
-        letter-spacing: $logo-letter-spacing;
-        @include media($large-screen-up) {
-            letter-spacing: $logo-letter-spacing * 1.5;
-        }
-
-        color: $logo-font-color;
-        &:focus,
-        &:hover {
-            color: lighten($logo-font-color, 15%);
-            border: none;
-        }
+    letter-spacing: $logo-letter-spacing;
+    @include media($large-screen-up) {
+      letter-spacing: $logo-letter-spacing * 1.5;
     }
+
+    color: $logo-font-color;
+    &:focus,
+    &:hover {
+      color: lighten($logo-font-color, 15%);
+      border: none;
+    }
+  }
 }
 
 #menu {
 
+  @include media($medium-screen-up) {
+    @include span-columns($half-grid-columns);
+  }
+
+  ul {
     @include media($medium-screen-up) {
-        @include span-columns($half-grid-columns);
+      height: $header-height;
+
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(flex-end);
     }
+  }
 
-    ul {
-        @include media($medium-screen-up) {
-            height: $header-height;
+  li {
+    list-style: none;
+    @include display(flex);
+    @include justify-content(center);
 
-            @include display(flex);
-            @include align-items(center);
-            @include justify-content(flex-end);
-        }
+    @include media($medium-screen-up) {
+      display: inline;
+      padding-right: em(15);
+      &:last-child {
+        padding-right: 0;
+      }
+      @include media($large-screen-up) {
+        padding-right: em(30);
+      }
     }
+  }
 
-    li {
-        list-style: none;
-        @include display(flex);
-        @include justify-content(center);
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $menu-font-size;
+    font-family: $menu-font-family;
+    font-weight: $menu-font-weight;
+    letter-spacing: $menu-letter-spacing;
+    color: $inactive-menu-font-color;
 
-        @include media($medium-screen-up) {
-            display: inline;
-            padding-right: em(15);
-            &:last-child {
-                padding-right: 0;
-            }
-            @include media($large-screen-up) {
-                padding-right: em(30);
-            }
-        }
+    &.active,
+    &:focus,
+    &:hover {
+      color: $active-menu-font-color;
     }
-
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: $menu-font-size;
-        font-family: $menu-font-family;    
-        font-weight: $menu-font-weight;
-        letter-spacing: $menu-letter-spacing;
-        color: $inactive-menu-font-color;
-        
-        &.active,
-        &:focus,
-        &:hover {
-            color: $active-menu-font-color;
-        }
-    }
+  }
 }
 
 #header-divider {
 
-    border-bottom: $divider-border;
-    margin-top: $divider-vertical-margin;
-    margin-bottom: $divider-vertical-margin;
-    
-    @include media($medium-screen-up) {
-        display: none;
-    }
+  border-bottom: $divider-border;
+  margin-top: $divider-vertical-margin;
+  margin-bottom: $divider-vertical-margin;
+
+  @include media($medium-screen-up) {
+    display: none;
+  }
 }

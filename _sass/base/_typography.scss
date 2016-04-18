@@ -1,11 +1,11 @@
 body {
-    @include font-feature-settings("kern", "liga", "pnum");
-    -webkit-font-smoothing: subpixel-antialiased;
-    color: $base-font-color;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
-    line-height: $base-line-height;
+  @include font-feature-settings("kern", "liga", "pnum");
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
 }
 
 h1,
@@ -14,67 +14,67 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $heading-font-family;
-    font-size: $heading-font-size;
-    font-weight: $heading-font-weight;
-    letter-spacing: $heading-letter-spacing;
-    line-height: $heading-line-height;
-    margin-top: $small-spacing;
-    margin-bottom: $small-spacing;
-    text-transform: uppercase;
+  font-family: $heading-font-family;
+  font-size: $heading-font-size;
+  font-weight: $heading-font-weight;
+  letter-spacing: $heading-letter-spacing;
+  line-height: $heading-line-height;
+  margin-top: $small-spacing;
+  margin-bottom: $small-spacing;
+  text-transform: uppercase;
 }
 
 p {
-    margin-bottom: $small-spacing;
-    text-align: justify;
-    @include hyphens(auto);
+  margin-bottom: $small-spacing;
+  text-align: justify;
+  @include hyphens(auto);
 }
 
 pre {
-    font-family: $monospace-font-family;
+  font-family: $monospace-font-family;
 }
 
 a {
-    color: $action-color;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    font-weight: 400;
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+  font-weight: 400;
 
-    &:active,
-    &:focus,
-    &:hover {
-        color: darken($action-color, 15%);
-    }
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
 
-    &:active,
-    &:focus {
-        outline: none;
-    }
+  &:active,
+  &:focus {
+    outline: none;
+  }
 }
 
 i, em {
-    font-weight: 300;
-    font-style: oblique;
+  font-weight: 300;
+  font-style: oblique;
 }
 
 b, strong {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .buzzword {
-    @extend em;
+  @extend em;
 }
 
 hr {
-    border-bottom: $base-border;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    margin: $base-spacing 0;
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
 }
 
 img,
 picture {
-    margin: 0;
-    max-width: 100%;
+  margin: 0;
+  max-width: 100%;
 }

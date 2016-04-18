@@ -1,28 +1,28 @@
 .block {
-    display: block;
-    @include fill-parent();
+  display: block;
+  @include fill-parent();
 
-    margin-top: 4 * $block-vertical-margin;
-    &:first-child {
-        margin-top: $block-vertical-margin
+  margin-top: 4 * $block-vertical-margin;
+  &:first-child {
+    margin-top: $block-vertical-margin
+  }
+
+  margin-bottom: $block-vertical-margin;
+
+  @include media($medium-screen-up) {
+    @include span-columns($half-grid-columns);
+
+    padding-right: 20px;
+    &:last-child {
+      padding-right: 0px;
     }
 
-    margin-bottom: $block-vertical-margin;
+    margin-top: $block-vertical-margin;
+  }
 
-    @include media($medium-screen-up) {
-        @include span-columns($half-grid-columns);
-
-        padding-right: 20px;
-        &:last-child {
-            padding-right: 0px;
-        }
-
-        margin-top: $block-vertical-margin;
-    }
-
-    a:active,
-    a:focus,
-    a:hover {
-        border-bottom: 1px solid $action-color;
-    }
+  a:active,
+  a:focus,
+  a:hover {
+    border-bottom: 1px solid $action-color;
+  }
 }
