@@ -3,8 +3,15 @@ email: m@felipedornelas.com
 author: Felipe Dornelas
 url: http://felipedornelas.com
 
-source_url: http://github.com/felipead/felipead.github.io
+contact_page: aGVsbG8K
+defaults:
+  -
+    scope:
+      path: "contact"
+    values:
+      permalink: "/aGVsbG8K/"
 
+source_url: http://github.com/felipead/felipead.github.io
 github_url: http://github.com/felipead
 twitter_url: http://twitter.com/felipead
 soundcloud_url: http://soundcloud.com/felipead
