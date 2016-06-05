@@ -26,15 +26,15 @@ Icons being used:
 
 1. Install Ruby with [Bundler](http://bundler.io).
 2. Install dependencies from `Gemfile`:
-  
+
   ```
   $ bundle install
   ```
-  
+
 3. Start jekyll:
-  
-  ```  
+
+  ```
   $ bundle exec jekyll serve
-  ```  
-  
+  ```
+
 4. Open `http://localhost:4000` on your browser
