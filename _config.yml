@@ -18,6 +18,6 @@ soundcloud_url: http://soundcloud.com/felipead
 mixcloud_url: http://mixcloud.com/felipead
 instagram_url: http://instagram.com/felipedornelas
 linkedin_url: http://linkedin.com/in/felipead
-resume_url: https://www.dropbox.com/s/5f332ouwyff535v/felipe-dornelas_english_a4.pdf?dl=0
+resume_url: http://linkedin.com/in/felipead
 
 exclude: ['Gemfile','Gemfile.lock','.git','.gitignore','README.md','LICENSE.txt']
