@@ -13,3 +13,7 @@ _site/
 
 # System
 .DS_Store
+
+# Bundler
+.bundle/
+vendor/
