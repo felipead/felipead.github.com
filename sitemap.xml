@@ -3,12 +3,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://felipedornelas.com</loc>
+        <loc>https://felipedornelas.com</loc>
     </url>
 
     {% for post in site.posts %}
     <url>
-        <loc>http://felipedornelas.com{{ post.url | remove: 'index.html' }}</loc>
+        <loc>https://felipedornelas.com{{ post.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 </urlset>
