@@ -11,13 +11,13 @@ defaults:
     values:
       permalink: "/contact/"
 
-source_url: http://github.com/felipead/felipead.github.io
-github_url: http://github.com/felipead
-twitter_url: http://twitter.com/felipead
-soundcloud_url: http://soundcloud.com/felipead
-mixcloud_url: http://mixcloud.com/felipead
-instagram_url: http://instagram.com/felipedornelas
-linkedin_url: http://linkedin.com/in/felipead
-resume_url: http://linkedin.com/in/felipead
+source_url: https://github.com/felipead/felipead.github.io
+github_url: https://github.com/felipead
+twitter_url: https://twitter.com/felipead
+soundcloud_url: https://soundcloud.com/felipead
+mixcloud_url: https://mixcloud.com/felipead
+instagram_url: https://instagram.com/felipedornelas
+linkedin_url: https://linkedin.com/in/felipead
+resume_url: https://linkedin.com/in/felipead
 
 exclude: ['Gemfile','Gemfile.lock','.git','.gitignore','README.md','LICENSE.txt']
