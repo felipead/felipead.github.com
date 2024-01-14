@@ -24,7 +24,7 @@ Icons being used:
 
 ## Setup
 
-1. Install Ruby with [Bundler](http://bundler.io).
+1. Install Ruby with [Bundler](http://bundler.io). The minimum supported version of Ruby is 3.3.0.
 2. Install dependencies from `Gemfile`:
 
   ```
