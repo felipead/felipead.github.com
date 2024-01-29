@@ -20,6 +20,10 @@ footer {
   font-family: $monospace-font-family;
   a {
     font-weight: 600;
+
+    &:hover {
+      border-bottom: 1px solid $action-color;
+    }
   }
 }
 
