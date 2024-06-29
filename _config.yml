@@ -13,6 +13,5 @@ defaults:
 source_url: https://github.com/felipead/felipead.github.io
 github_url: https://github.com/felipead
 linkedin_url: https://linkedin.com/in/felipead
-resume_url: https://linkedin.com/in/felipead
 
 exclude: ['Gemfile','Gemfile.lock','.git','.gitignore','README.md','LICENSE.txt']
